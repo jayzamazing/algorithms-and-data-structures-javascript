@@ -1,6 +1,6 @@
 'use strict';
 const chai = require('chai');
-const isUnique = require('../CTCI Chapter 1/1.1 isUnique').default;
+const isUnique = require('../../src/CTCI Chapter 1/1.1 isUnique').default;
 
 chai.should();
 
