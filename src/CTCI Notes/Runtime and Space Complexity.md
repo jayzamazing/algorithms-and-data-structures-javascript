@@ -16,7 +16,15 @@ Big O is the language and metric we use to describe the efficiency of algorithms
 - An array has a space complexity of O(n) while a two-dimensional array O(n^2).
 - Recursive calls also take up O(n) space.
 
+## Big O times
 
+- O(n!) - factorial time
+- O(2^n) - exponential time
+- O(n^2) - quadratic time
+- O(n log n) - quasilinear time
+- O(n) - linear time
+- O(log n) - logarithmic time
+- O(1) - constant time
 
 ## Figuring out Run Time of an Algorithms
 
@@ -45,6 +53,7 @@ Big O is the language and metric we use to describe the efficiency of algorithms
   }
   ```
 - O(log n) - e.g. binary search where search is cut in half each time.
+>Pseudo code example
 
   ```
   search 9 within {1, 5, 8, 9, 11, 13, 15, 19, 21}
@@ -54,9 +63,4 @@ Big O is the language and metric we use to describe the efficiency of algorithms
       search 9 within {9, 11}
         compare 9 to 9
         return
-  ```
-- O(n^2) - e.g. recursion
-/////TODO - Continue here
-  ```
-
   ```
