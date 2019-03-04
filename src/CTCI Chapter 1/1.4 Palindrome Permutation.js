@@ -31,7 +31,7 @@ exports.default = (str) => {
     }
   });
   //if chars count is even
-  if (chars.length % 2 === 0) {
+  if (Object.keys(chars).length % 2 === 0) {
     return Object.keys(chars).length === 0;
   //otherwise count is odd
   } else {
