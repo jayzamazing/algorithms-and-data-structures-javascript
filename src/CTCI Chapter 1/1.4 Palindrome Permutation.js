@@ -13,6 +13,7 @@
 exports.default = (str) => {
   //object to store keys and values - a: 2
   let chars = {};
+  let count = 0;
   //split into array and iterate over each item in array
   str.split('').forEach((char) => {
     //as long as array item is not a space
@@ -29,9 +30,10 @@ exports.default = (str) => {
       //add char to map
       chars[charLower] = true;
     }
+    count++;
   });
   //if chars count is even
-  if (Object.keys(chars).length % 2 === 0) {
+  if (count % 2 === 0) {
     return Object.keys(chars).length === 0;
   //otherwise count is odd
   } else {
