@@ -11,14 +11,13 @@ exports.default = (matrix) => {
   }
   //get the height and width of the matrix
   const matrixHeight = matrix.length;
-  const matrixWidth = matrix[0].length;
   //initialize rows and columns to zero out
   let rows = {};
   let cols = {};
   //iterate over the matrix using the height
   for (let i = 0; i < matrixHeight; i++) {
     //iterate over the matrix using the width
-    for (let j = 0; j < matrixWidth; j++) {
+    for (let j = 0; j < matrix[i].length; j++) {
       //if 0 is at this index, then store true
       if (matrix[i][j] === 0) {
         rows[i] = true;
