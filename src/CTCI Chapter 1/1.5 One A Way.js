@@ -36,7 +36,7 @@ exports.default = (str1, str2) => {
       if (str1.charAt(i + 1) === str2.charAt(j)) {
         //increment the first string once here and again on loop iteration
         i++;
-      } else {
+      } else if (str1.charAt(i) === str2.charAt(j + 1)) {
         //increment the other index and again on loop iteration
         j++;
       }
