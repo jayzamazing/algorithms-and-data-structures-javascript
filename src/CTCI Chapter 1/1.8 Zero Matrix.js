@@ -18,7 +18,7 @@ exports.default = (matrix) => {
   //iterate over the matrix using the height
   for (let i = 0; i < matrixHeight; i++) {
     //iterate over the matrix using the width
-    for (let j = 0; j < matrixWidth; ++j) {
+    for (let j = 0; j < matrixWidth; j++) {
       //if 0 is at this index, then store true
       if (matrix[i][j] === 0) {
         rows[i] = true;
