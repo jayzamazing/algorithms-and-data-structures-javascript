@@ -46,6 +46,18 @@ class LinkedList {
     this.length++;
     return this;
   }
+  /**
+  * add a node to the beginning of the linked list
+  * @param value - value to store
+  * @return - returns the linkedlist
+  */
+  prepend(value) {
+    const newNode = new Node(value);
+    newNode.next = this.head;
+    this.head = newNode;
+    this.length++;
+    return this;
+  }
 }
 
 module.exports = {LinkedList, Node};
