@@ -26,10 +26,16 @@ describe('linked list', () => {
     newList.head.should.deep.equal(testNode);
     newList.tail.should.deep.equal(testNode2);
   });
-  it.only('should print out the values of a linked list', () => {
+  it('should print out the values of a linked list', () => {
     let newList = new LinkedList(8);
     newList.append(9);
     newList.append(10);
     newList.printList().should.deep.equal([8, 9, 10])
   });
+  it.only('should return the node at specified index with traveseToIndex', => {
+    let newList = new LinkedList(8);
+    newList.append(9);
+    newList.append(10);
+    console.log(newList.traveseToIndex(1));
+  };
 });

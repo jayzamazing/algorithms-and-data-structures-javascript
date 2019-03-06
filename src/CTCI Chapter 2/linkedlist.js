@@ -76,6 +76,25 @@ class LinkedList {
     }
     return array;
   }
+  /**
+  * Go through the linked list until it arrives at the specified index
+  * @param index - integer to travel to
+  * @return currentNode - node with value and next
+  */
+  traverseToIndex(index) {
+    //counter to keep track of the current index
+    let counter = 0;
+    //beginning node
+    let currentNode = this.head;
+    //iterate until counter and index are the same
+    while(counter !== index) {
+      //set next node as current for next iteration
+      currentNode = currentNode.next;
+      //increment the counter
+      counter++;
+    }
+    return currentNode;
+  }
 }
 
 module.exports = {LinkedList, Node};
