@@ -95,6 +95,31 @@ class LinkedList {
     }
     return currentNode;
   }
+  /**
+  * insert node at a specified index
+  * @param index - integer to travel to
+  * @param value - value to store
+  */
+  insert(index, value) {
+    //if the index is greater than the length of the stored nodes
+    if(index >= this.length) {
+      //add node to the end of the linked list
+      return this.append(value);
+    }
+    //create a new node
+    const newNode = new Node(value);
+    //store off the node previous to the requested index
+    const leader = this.traverseToIndex(index - 1);
+    //store the next node of the leader
+    const holdingPointer = leader.next;
+    //set the next node of the leader to the new node
+    leader.next = newNode;
+    //set the next node of the new node to the held pointer
+    newNode.next = holdingPointer;
+    //increment the length
+    this.length++;
+    return this;
+  }
 }
 
 module.exports = {LinkedList, Node};
