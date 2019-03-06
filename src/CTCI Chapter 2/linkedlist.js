@@ -58,6 +58,24 @@ class LinkedList {
     this.length++;
     return this;
   }
+  /**
+  * Print out the values of the nodes in this linkedlist
+  * @return array - containing node values
+  */
+  printList() {
+    //create an array to store values
+    const array = [];
+    //set current node as head
+    let currentNode = this.head;
+    //iterate over all the connected nodes
+    while(currentNode !== null) {
+      //push the current value to the array
+      array.push(currentNode.value);
+      //set the current node to the next node
+      currentNode = currentNode.next;
+    }
+    return array;
+  }
 }
 
 module.exports = {LinkedList, Node};
