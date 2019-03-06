@@ -118,7 +118,18 @@ class LinkedList {
     newNode.next = holdingPointer;
     //increment the length
     this.length++;
-    return this;
+    return this.printList();;
+  }
+  remove(index) {
+    //store off the node previous to the requested index
+    const leader = this.traverseToIndex(index - 1);
+    //get the unwanted node
+    const unwantedNode = leader.next;
+    //set the leader next node to the node after the unwanted node
+    leader.next = unwantedNode.next;
+    //decrement the length
+    this.length--;
+    return this.printList();
   }
 }
 

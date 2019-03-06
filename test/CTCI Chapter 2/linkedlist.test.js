@@ -44,4 +44,11 @@ describe('linked list', () => {
     newList.append(10);
     newList.insert(1, 25).head.next.value.should.equal(25);
   });
+  it('should remove a new node from a specified index', () => {
+    let newList = new LinkedList(8);
+    newList.append(9);
+    newList.append(10);
+    newList.remove(1);
+    newList.head.next.value.should.equal(10);
+  });
 });
