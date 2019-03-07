@@ -1,5 +1,6 @@
 'use strict';
 const chai = require('chai');
+chai.should();
 const rotateM = require('../../src/CTCI Chapter 1/1.7 Rotate Matrix').default;
 
 describe('Rotate Matrix', () => {

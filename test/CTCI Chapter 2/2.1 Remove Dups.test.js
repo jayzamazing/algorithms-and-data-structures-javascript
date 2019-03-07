@@ -1,12 +1,13 @@
 'use strict';
 
 const chai = require('chai');
+chai.should();
 const removeDups = require('../../src/CTCI Chapter 2/2.1 Remove Dups');
 const {LinkedList, Node} = require('../../src/CTCI Chapter 2/linkedlist');
 
 
 describe('Remove Dups', () => {
-  it.only('should remove duplicates', () => {
+  it('should remove duplicates', () => {
     let newList = new LinkedList(7);
     newList.append(15);
     newList.append(10);

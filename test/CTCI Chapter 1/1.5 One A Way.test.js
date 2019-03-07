@@ -1,5 +1,6 @@
 'use strict';
 const chai = require('chai');
+chai.should();
 const oneAway = require('../../src/CTCI Chapter 1/1.5 One A Way').default;
 
 describe('One Way', () => {

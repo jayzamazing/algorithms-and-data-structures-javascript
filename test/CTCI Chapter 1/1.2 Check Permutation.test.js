@@ -1,5 +1,6 @@
 'use strict';
 const chai = require('chai');
+chai.should();
 const checkPermutation = require('../../src/CTCI Chapter 1/1.2 Check Permutation').default;
 
 describe('check permutation', () => {

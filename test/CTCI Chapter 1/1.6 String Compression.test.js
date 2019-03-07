@@ -1,5 +1,6 @@
 'use strict';
 const chai = require('chai');
+chai.should();
 const strComp = require('../../src/CTCI Chapter 1/1.6 String Compression').default;
 
 describe('String Compression', () => {

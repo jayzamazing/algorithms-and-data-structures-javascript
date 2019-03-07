@@ -1,5 +1,6 @@
 'use strict';
 const chai = require('chai');
+chai.should();
 const sRotation = require('../../src/CTCI Chapter 1/1.9 String Rotation').default;
 
 describe('String Rotation', () => {

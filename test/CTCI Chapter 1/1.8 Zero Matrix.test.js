@@ -1,5 +1,6 @@
 'use strict';
 const chai = require('chai');
+chai.should();
 const zMatrix = require('../../src/CTCI Chapter 1/1.8 Zero Matrix').default;
 
 describe('Zero Matrix', () => {

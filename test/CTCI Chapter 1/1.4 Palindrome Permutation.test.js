@@ -1,5 +1,6 @@
 'use strict';
 const chai = require('chai');
+chai.should();
 const palindrome = require('../../src/CTCI Chapter 1/1.4 Palindrome Permutation').default;
 
 describe('Palindrome Permutation', () => {

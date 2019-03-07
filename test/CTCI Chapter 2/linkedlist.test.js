@@ -1,5 +1,6 @@
 'use strict';
 const chai = require('chai');
+chai.should();
 const {LinkedList, Node} = require('../../src/CTCI Chapter 2/linkedlist');
 
 
