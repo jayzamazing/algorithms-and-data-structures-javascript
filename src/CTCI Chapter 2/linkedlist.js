@@ -118,7 +118,7 @@ class LinkedList {
     newNode.next = holdingPointer;
     //increment the length
     this.length++;
-    return this.printList();;
+    return this.printList();
   }
   remove(index) {
     //store off the node previous to the requested index
