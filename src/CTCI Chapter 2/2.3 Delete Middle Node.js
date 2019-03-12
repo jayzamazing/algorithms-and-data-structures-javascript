@@ -17,6 +17,6 @@
      node.value = node.next.value;
      //set the next to skip next node and go to the following node
      node.next = node.next.next;
- }
+ };
 
  module.exports = deleteMid;
