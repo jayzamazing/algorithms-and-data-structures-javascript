@@ -1,7 +1,7 @@
 'use strict';
 /**
  * Merged meeting times, using an array of meeting times, condense the ranges.
- * 
+ * time: O(n lg n), space O(n)
  */
 
 let mergeRanges = (meetings) => {
