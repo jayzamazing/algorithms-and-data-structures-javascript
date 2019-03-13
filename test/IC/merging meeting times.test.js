@@ -3,7 +3,7 @@ const mergeRanges = require('../../src/IC/merging meeting times');
 const chai = require('chai');
 chai.should();
 
-describe.only('Merge Ranges', () => {
+describe('Merge Ranges', () => {
     it('should condense meeting ranges', () => {
         mergeRanges([
             { startTime: 1, endTime: 4 },
